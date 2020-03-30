@@ -11,10 +11,9 @@ import com.forte.qqrobot.beans.messages.types.MsgGetTypes;
 @Beans
 public class Listener1 {
 
-
     @Listen(MsgGetTypes.privateMsg)
     public void ls(PrivateMsg msg){
-        System.out.println(msg);
+        System.out.println("私信: " + msg);
     }
 
 }
